@@ -1,0 +1,8 @@
+produto1=float(input"qual o preco do produto?"))
+quant1=int(input("qual a quantidade? "))
+produto2=float(input("qual o preco do produto? "))
+quant2 = int(input("qual a quantidade? "))
+produto3 = float(input("qual o preco do produto? "))
+quant3 =int(input("qual a quantidade? "))
+valor= (produto1 * quant1)+(produto2 * quant2)+(produto3 * quant3)
+print("o valor da compra foi de:",valor)
