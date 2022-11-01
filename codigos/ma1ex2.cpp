@@ -60,5 +60,5 @@ int main(){
     back(d);
     pop_front(d);
     imprime(d);
-    front(d);  
+    front(d);
 }

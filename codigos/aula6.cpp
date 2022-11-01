@@ -1,18 +1,34 @@
 #include <iostream>
-
 using namespace std;
 
-struct aluno{
-    int ra;
-    float nota;
+struct no{
+  int valor;
+  no * proximo;
 };
 
-int main(){
-  aluno a;//variavel do tipo aluno
-  aluno*pa; //ponteiro para struct
-  pa= &a;//ponteiro "pa" aponta a variavel "a"
-  pa->ra=123;//o campo "ra" da struct apontada por "pa" sera alterado
-  pa->nota=9.5;//o campo "nota" da struct apontada por "pa" sera alterada
-  
-  return 0;  
+no * inicio= NULL;
+
+no * fim = NULL;
+
+void enqueue(int novoValor){
+  no * novoNo =(no*)malloc(sizeof(no));
+  novoNo -> valor = novoValor;
+  novoNo -> proximo = NULL;
+  if(inicio==NULL){
+    inicio = novoNo;
+    fim = novoNo;
+  }
+  else{
+    fim -> proximo = novoNo;
+    fim = novoNo;
+  }
 }
+
+int first(){
+  return inicio->valor;
+}
+
+int main(){
+  cout<<"FUNFO";
+}
+
