@@ -1,4 +1,4 @@
-produto1 = float(input "qual o preco do produto? "))
+produto1 = float(input ("qual o preco do produto? "))
 quant1 = int(input("qual a quantidade? "))
 produto2 = float(input("qual o preco do produto? "))
 quant2 = int(input("qual a quantidade? "))

@@ -1,5 +1,5 @@
 print('programa para fazer listas')
-list=[]
+lista=[]
 v=float(input('Digite um valor'))
 list.append(v)
 op=int(input('''Deseja continuar:
@@ -14,8 +14,9 @@ while op==1:
     Não[2]
     :'''))
 print(list)
-for c,i enumerate(list):
+for c,i enumerate(lista, i):
     local=c
+
 z=len(list)
 op2=int(input('''menu de ações:
 1 - para deletar o último elemento
